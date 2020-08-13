@@ -8,10 +8,9 @@ import { createStore, combineReducers } from 'redux';
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
 
-// State and reducers
-const reducers = combineReducers({
-  changeMe: (state = null, action) => state
-});
+// Reducers
+import reducers from './reducers';
+
 
 // render an instance of the component in the DOM
 ReactDOM.render(
